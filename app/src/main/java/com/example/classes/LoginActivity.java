@@ -62,12 +62,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     Toast.makeText(LoginActivity.this,"Username is empty",Toast.LENGTH_LONG).show();
                 }
                 else{
-
+                        launchDashboardActivity();
                 }
             }
         });
     }
-
+    private void launchDashboardActivity(){
+        Intent intent =new Intent(this, DashboardActivity.class);
+        startActivity(intent);
+    }
     @Override
     public void onClick(View view) {
         if(view.getId()==R.id.btn_login){
