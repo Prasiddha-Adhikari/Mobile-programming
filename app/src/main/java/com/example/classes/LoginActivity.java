@@ -71,6 +71,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
         if(view.getId()==R.id.btn_login){
+//            Intent intent = new Intent(LoginActivity.this,Dashboard.class);
 
         }
         else if(view.getId()==R.id.txt_Signup){
